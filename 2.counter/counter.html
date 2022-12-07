@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="기획 : 유정호(강사님), 제작 : 왕재준, 인찬휘">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="counter.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nanum: ['Nanum Gothic']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <article class="flex flex-col justify-center items-center mt-40">
+        <div class="text-[7rem]">Counter</div>
+        <p class="text-[#21dc6d] text-[6rem]">0</p>
+        <div class="buttons">
+            <button id="decrease" class="text-[2rem] border-2 border-black border-dashed p-2">DECREASE</button>
+            <button id="reset" class="text-[2rem] border-2 border-black border-dashed p-2 mx-9">RESET</button>
+            <button id="increase" class="text-[2rem] border-2 border-black border-dashed p-2">INCREASE</button>
+        </div>
+    </article>
+</body>
+
+</html>

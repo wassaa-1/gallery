@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+
+    <!-- Font-awesome 설정 코드 -->
+    <script src="https://kit.fontawesome.com/a6e68d2364.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="app.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nanum: ['Nanum Gothic']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <article>
+        <header style="background-color: #434242;" class="flex justify-between items-center px-9">
+            <div class="Header__left text-white">
+                <li><a href="https://developer.mozilla.org/ko/docs/Web/HTML" aria-label="mdn-html">HTML</a></li>
+                <li><a href="https://developer.mozilla.org/ko/docs/Web/CSS/Reference" aria-label="mdn-css">CSS</a></li>
+                <li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript" aria-label="mdn-javascript">JS</a>
+                </li>
+            </div>
+            <div class="Header__right flex text-[30px]">
+                <div class="Header__right__image mx-4">
+                    <i class="fa-solid fa-lemon"></i>
+                </div>
+                <div class="Header__right__text">
+                    <p class="colorful-font">Pinchs</p>
+                </div>
+            </div>
+        </header>
+        <section style="background-color: #FED049;" class="pt-40">
+            <a href="../1.color/color.html" class="mr-5 mb-[320px]">
+                <img src="color.gif" alt="change_color_page">
+            </a>
+            <a href="../2.counter/counter.html" class="ml-5 mb-[320px]">
+                <img src="counter.gif" alt="count_number_page">
+            </a>
+        </section>
+        <footer class="mt-auto">
+            <div class="flex justify-around px-0 py-3 dark:text-white">
+                <ul class="Footer__corp">
+                    <p>2022 Pinchs, Inc
+                    </p>
+                </ul>
+                <ul class="flex justify-center">
+                    <li><a href="https://github.com/wassaa-1/"><i class="mx-2 my-0 fab fa-github fa-lg"></i></a></li>
+                    <li><a href="https://github.com/jayarnim/"><i class="mx-2 my-0 fab fa-github fa-lg"></i></a></li>
+                </ul>
+                <ul class="flex">
+                    <li class="mx-2 my-0"><a href="#" class="dark:text-white">Home</a></li>
+                    <li class="mx-2 my-0"><a href="#" class="dark:text-white">Features</a></li>
+                    <li class="mx-2 my-0"><a href="#" class="dark:text-white">Pricing</a></li>
+                    <li class="mx-2 my-0"><a href="#" class="dark:text-white">FAQs</a></li>
+                    <li class="mx-2 my-0"><a href="#" class="dark:text-white">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </article>
+</body>
+
+</html>

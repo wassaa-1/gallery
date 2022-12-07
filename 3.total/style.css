@@ -1,0 +1,165 @@
+/* general */
+html,
+body {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', 'sans-serif';
+    font-weight: 700;
+}
+
+body {
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    height: 10vh;
+}
+
+/* 중앙부에 대하여 별도로 설정하지 않는 한 다음으로 설정함
+display : 중심축을 기준으로 콘텐츠를 나열함
+flex-grow : 오른쪽 여백이 존재하면 확대하여 채움
+height :  */
+section {
+    display: flex;
+    flex-grow: 1;
+    height: 60vh;
+    justify-content: center;
+}
+
+/* 별도로 설정하지 않는 한 이미지 색상을 회색으로 지정함 */
+i {
+    color: #6c757d;
+}
+
+
+
+/* Header */
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+    padding: 10px 0;
+}
+
+
+
+/* Header__left */
+.Header__left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.Header__left li {
+    margin: 6px;
+    font-size: 1rem;
+}
+
+
+/* Header__right */
+@-webkit-keyframes colorchange {
+    0% {
+        color: blue;
+    }
+
+    10% {
+        color: #8e44ad;
+    }
+
+    20% {
+        color: #1abc9c;
+    }
+
+    30% {
+        color: #d35400;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    50% {
+        color: #34495e;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: #2980b9;
+    }
+
+    80% {
+        color: #f1c40f;
+    }
+
+    90% {
+        color: #2980b9;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        color: blue;
+    }
+
+    10% {
+        color: #8e44ad;
+    }
+
+    20% {
+        color: #1abc9c;
+    }
+
+    30% {
+        color: #d35400;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    50% {
+        color: #34495e;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: #2980b9;
+    }
+
+    80% {
+        color: #f1c40f;
+    }
+
+    90% {
+        color: #2980b9;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+.colorful-font,
+.Header__right__image i {
+    margin: 0;
+    color: #313131;
+    font-weight: bold;
+    -webkit-animation: colorchange 10s infinite alternate;
+    animation: colorchange 10s infinite alternate;
+}
